@@ -1,0 +1,431 @@
+h1,h2,h3,h4{
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightskyblue;
+        
+}
+
+.header{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.navbar{
+    display: inline;
+   
+}
+
+.month-list{
+    width: 100%;
+    
+}
+.month-item{
+    display: inline-block;
+    border: 2px solid aqua;
+    font-size: 30px;
+    list-style-type: none;
+    margin: 8px;
+    padding: 40px;
+    width: 18%;  
+    text-align: center;
+    
+}
+
+.month-item a{
+    color: darkblue;
+}
+
+.note-form{
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+}
+
+.is-visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+div .content, .note-form{
+    display: inline;
+}
+
+.january{
+    background-image: url('https://static.bhphotovideo.com/explora/sites/default/files/Correct.jpg');
+    background-size: contain;
+   
+}
+
+.february{
+    background-image: url('https://s-media-cache-ak0.pinimg.com/originals/a6/9a/4f/a69a4f08d8350b4550898291c9879797.jpg');
+    background-size: cover;
+}
+
+.december{
+    background-image: url('http://cdn.wallpapersafari.com/86/26/w4ulDB.jpg');
+    background-size: cover;
+}
+
+.march{
+    background-image: url('http://www.deke.com/files/images/Blog-15Mar2013-shamrock/01-Fotolia_33180070_XL.jpg');
+    background-size: contain;
+   
+}
+
+.april{
+    background-image: url('http://www.rd.com/wp-content/uploads/sites/2/2016/09/03-not-weird-facts-rain-Mr_Twister.jpg');
+    background-size: cover;
+}
+
+.may{
+    background-image: url('http://www.accesshomeinsurance.com/wp-content/uploads/2014/04/May-Flowers.jpg');
+    background-size: cover;
+}
+
+.june{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWRS8vjOBgS0TpZdxhVApatUzyopWbldObV16_fZAKmQyOhzqL');
+    background-size: contain;
+   
+}
+
+.july{
+    background-image: url('http://sugarcreek1and4.org/wp-content/uploads/2012/02/Pool2.jpg');
+    background-size: cover;
+}
+
+.august{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTodrAshxiBvmzF54RCR0cbj17LLXNZ_RT7aIS_EgEhOw77HcARKg');
+    background-size: cover;
+}
+
+.september{
+    background-image: url('http://www.mommyish.com/wp-content/uploads/2014/08/school-supply.jpg');
+    background-size: contain;
+   
+}
+
+.october{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBJPUOqEK6p9A3Tq3LSIrAbS0vVwk4F-ZHbZUJ_ikz2EMJHgHOA');
+    background-size: cover;
+}
+
+.november{
+    background-image: url('http://dstvalleyforge.org/wp-content/uploads/2014/09/fall-leaves-falling-banner.jpg');
+    background-size: cover;
+}
+
+.calendar-title{
+    font-size: 50px;
+    color: cornflowerblue;
+}
+
+.reminder-pane{
+    float: right;
+    width: 30%;
+    display: inline-block;
+    margin-right: 50px; 
+}
+
+.note-record{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    width: 60%;
+    position: absolute;
+    top: 200px ;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.modal-overlay{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    width: 100%;
+}
+
+.retreat{
+    opacity: 0.2;
+    visibility: visible;
+    background-color: darkblue;
+    width: 100%;
+}
+
+.activate{
+    opacity: 1;
+    visibility: visible;
+    display: inline;
+   z-index: 20;
+}
+
+.reminder-pane{
+    overflow-y: scroll;
+    height: 100px;
+    width: 50%;
+    border: 1px solid black;
+    position: relative;
+    bottom: 130px;
+    left: 130px;
+    right: 20px;
+    padding: 5px;
+    margin-right: 190px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.modal-win{
+    background-color: aquamarine;
+    padding: 30px;
+    font-size: 12px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.glyphicon-remove{
+    float: right;   
+    position: absolute;
+    left: 660px;
+    top: 10px;
+}
+
+#checkBox{
+    margin-left: 18px;
+}
+
+.month-item:hover{
+    opacity: 0.4; 
+   /* background:rgba(255,255,255,0.2);*/
+    
+}
+
+
+
+.foot1{
+    list-style-type: none;
+    display: inline;
+    width: 100%;
+    font-size: 20px;
+    
+     list-style-type: none;
+    display: inline;
+    background-color: darkslateblue;
+    width: 100%;
+   float: left;
+    height: 200px; 
+    
+}
+
+.foot1 li{
+    /*float: right;*/ 
+    display: inline;
+    position: relative;
+    top: 30px;
+    padding-right: 130px; 
+    padding-bottom: 2px;
+}
+
+.foot1 li:last{
+    float: right;
+}
+
+.foot2{
+    padding-top: 5px;
+}
+
+.foot2 li{
+    display: table;
+    font-size: 15px; 
+    padding:2px;
+    position: relative;
+    right: -563px;
+    top: -2px;
+    
+}
+
+.table, .table2{
+    display: table;
+    background-color:darkturquoise;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100px;
+}
+
+.cell, .cell2{
+    display: table-cell;
+    padding: 20px;
+    text-align: center;
+}
+
+.dots, .dots2{
+    list-style-type: none;
+    display: inline-block;
+    
+    
+}
+
+.slide1, .slide2{
+    display: block;
+    text-align: center;
+}
+
+.slide1 li, .slide2 li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.circle{
+    font: Lato;
+    position: relative;
+    top: 20px;
+    
+    
+}
+
+.circle li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: white;
+    background-color: darkblue;
+    
+    
+    
+}
+
+.table2{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.cell2{
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+   
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+.show{
+    opacity: 1;
+    visibility: visible;
+    height: 100px;
+}
+
+.dec{
+    height: 100px;
+    background-color:darkblue;
+    width:100%;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.bar{
+    height:100px;
+    width:20px;
+    background-color:darkslateblue;
+    float: right;
+}
+
+.triangle{
+    height:0;
+    width:0;
+    border-right: 100px solid darkslateblue;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    float:right;
+}
+
+#myCarousel{
+    margin-bottom: 100px; 
+    background-color: cornflowerblue;
+    box-shadow: inset 0 0 0 10px cornflowerblue;
+    top: 60px;
+    
+}
+
+.carousel-indicators{
+    /*display: inline-block; */
+    bottom: -5px;
+    
+}
+
+.carousel-inner {
+    top: -50px;
+}
+
+.na .fa{
+    float:right;
+}
+
+.container-fluid{
+    background-color: darkslateblue;
+    color: white;
+    height: 50px;
+}
+
+.navbar-default .navbar-nav li a{
+    color: white;
+}
+
+.navbar-default .navbar-nav li i, .navbar-default .navbar-nav li a {
+    
+    display: inline;
+}
+
+.navbar-default .navbar-nav li {
+    padding: 5px;
+    margin: 10px;
+}
+
+.navbar-default .navbar-nav li i{
+    float: right;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+/*.pic-item{
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+    height: 100%;
+    width: 50%;
+    object-fit: fill;
+}*/
+.startpic{
+    background: url(http://www.dailydooh.com/wp-content/uploads/img/calendar-icon.png) left center no-repeat, url(https://www.shareicon.net/data/256x256/2015/11/27/678554_list_512x512.png) right center no-repeat;
+    height: 500px;
+}

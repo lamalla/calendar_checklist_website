@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to nginx!</title>
+    <style>
+        body {
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif, 'Glyphicons-Halflings';
+        }
+    </style>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/newwebpage.css" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    
+</head>
+<body>
+    <main>
+        <div class='header js-header'>
+            <!--<a href='#'>Calendar</a>-->
+            <h1 class='calendar-title'>Calendar</h1>
+            <!--<img src='calremind.png' alt='CalRemind Logo'/>-->
+        </div>
+        <nav class='navbar navbar-default'>
+            <div class='container-fluid'>
+                <ul class='nav navbar-nav'>
+                    <li class='navi home'><a href='#'>Home</a></li>
+                    <li class='navi about'><a href='#'>About</a></li>
+                    <li class='navi help'><a href='#'>Help</a></li>
+                    <li class='navi contact'><a href='#'>Contact Us</a></li>
+                    <li class='navi fb'><i class='na fa fa-facebook'></i><a href='#'></a></li>
+                    <li class='navi tw'><i class='na fa fa-twitter'></i><a href='#'></a></li>
+                    <li class='navi insta'><i class='na fa fa-instagram'></i><a href='#'></a></li>
+                    <li class='navi snpcht'><i class='na fa fa-snapchat'></i><a href='#'></a></li>
+                    <li class='navi email'><i class='na fa fa-envelope'></i><a href='#'></a></li>
+                </ul>
+            </div>
+        </nav>
+         <div class='modal'>
+             <div class='modal-win'>
+                <form class='form note-form2'>
+                    <label class='date-label2' for='date2'>Date :</label>
+                    <input class='date-input2' type='date' id='date2' name='date2'/>
+                    <label class='note-label2' for='note2'>Note:</label>
+                    <input class='note-input2' type='text' id='note2' name='note2'/>
+                    <input class='submit form-submit2' type='submit'/>
+                    <input id='checkBox' type='checkBox'/>Send Email Reminder
+                    <!--<button class='form-cancel2'>Cancel</button> -->
+                    <span class='glyphicon glyphicon-remove'></span>
+                </form>
+             </div>
+        </div>
+        <div class='modal-overlay'>
+        <div class='startpic'>
+            <!--<ol class='pics'>
+                 <li class='pic-item cal'><img src='http://www.dailydooh.com/wp-content/uploads/img/calendar-icon.png' alt='Calendar'/></li>
+                 <li class='pic-item checklist'><img src='https://www.janiking.com/wp-content/uploads/2013/08/bank-cleaning-checklist-1.jpg' alt='Checklist'/></li>
+            </ol>-->
+        </div>
+        <div class='content'>
+            <ol class='month-list'>
+                <li class='month-item january' name='01'><a href='#'>January</a></li>
+                <li class='month-item february' name='02'><a href='#'>February</a></li>
+                <li class='month-item march' name='03'><a href='#'>March</a></li>
+                <li class='month-item april' name='04'><a href='#'>April</a></li>
+                <li class='month-item may' name='05'><a href='#'>May</a></li>
+                <li class='month-item june' name='06'><a href='#'>June</a></li>
+                <li class='month-item july' name='07'><a href='#'>July</a></li>
+                <li class='month-item august' name='08'><a href='#'>August</a></li>
+                <li class='month-item september' name='09'><a href='#'>September</a></li>
+                <li class='month-item october' name='10'><a href='#'>October</a></li>
+                <li class='month-item november' name='11'><a href='#'>November</a></li>
+                <li class='month-item december' name='12'><a href='#'>December</a></li>
+            </ol>
+        </div>
+        <div class='reminder-pane col col-xs-12'>Reminders:
+            <ol class='note-record'>
+            </ol>
+        </div>
+        <!--<div >
+            <form class='form note-form'>
+                <label class='date-label' for='date'>Date :</label>
+                <input class='date-input' type='date' id='date' name='date'/>
+                <label class='note-label' for='note'>Note:</label>
+                <input class='note-input' type='text' id='note' name='note'/>
+                <input class='submit form-submit' type='submit'/>
+                <button class='form-cancel'>Cancel</button>
+            </form>
+        </div>-->
+        <!--<div class='reminder-pane'>Reminders
+        </div>-->
+        <div id='myCarousel' class='carousel slide' data-ride='carousel'>
+            <div>
+                <ol class='carousel-indicators'>
+                    <li data-target='#myCarousel' data-slide-to='0'></li>
+                    <li data-target='#myCarousel' data-slide-to='1'></li>
+                </ol>    
+            </div>
+            <div class='carousel-inner'>
+                <div class='item active'>
+                    <ol class='slide slide1'>
+                        <li class='review1'>Too good! -V.A.</li>
+                        <li class='review2'>So wow! -A.D.</li>
+                        <li class='review3'>Much nice! -S.M.</li>
+                    </ol>
+                </div>
+                <div class='item'>
+                    <ol class='slide slide2'>
+                        <li class='review4'> :) </li>
+                        <li class='review5'> :D </li>
+                        <li class='review6'>;P </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <a class='left carousel-button' href='myCarousel' data-slide='prev'>
+            <span class='glyphicon glyphicon-chevron-left'></span>
+            </a>
+        <a class='right carousel-button' href='myCarousel' data-slide='prev'>
+            <span class='glyphicon glyphicon-chevron-right'></span>
+            </a>
+        </div>
+        <!--<div class='table'>
+            <div class='cell'>
+                <ol class='dots'>
+                    <ol class='slide1'>
+                        <li class='review1'>Too good! -V.A.</li>
+                        <li class='review2'>So wow! -A.D.</li>
+                        <li class='review3'>Much nice! -S.M.</li>
+                    </ol>
+                    <ol class='circle circle1'>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </ol>
+            </div>
+        </div>-->
+        <!--<div class='table2'>
+            <div class='cell2'>
+                <ol class='dots2'>
+                     <ol class='slide2'>
+                        <li class='review4'> :) </li>
+                        <li class='review5'> :D </li>
+                        <li class='review6'>;P </li>
+                    </ol>
+                    <ol class='circle circle2'>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </ol>
+            </div>
+        </div>-->
+          <div class='dec'>
+            <div class='triangle'>
+            </div>
+            <div class='bar'>
+            </div>
+        </div>
+        <div class='footer'>
+                <ol class='foot1'>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Contact Us</a></li>
+                    <li><a href='#'>Help</a></li>
+                    <li><a href='#'>Share</a>
+                    <ol class='foot2'>
+                        <li><i class='fa fa-facebook'></i><a href='#'>  Facebook</a></li>
+                        <li><i class='fa fa-twitter'></i><a href='#'>  Twitter</a></li>
+                        <li><i class='fa fa-instagram'></i><a href='#'>  Instagram</a></li>
+                        <li><i class='fa fa-snapchat'></i><a href='#'>  Snapchat</a></li>
+                        <li><i class='fa fa-envelope'></i><a href='#'>  Email</a></li>
+                    </ol>
+            </ol>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='calendar.js'></script>
+</body>
+</html>
