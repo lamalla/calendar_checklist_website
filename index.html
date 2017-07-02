@@ -18,27 +18,49 @@
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
-    
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 </head>
 <body>
     <main>
+        <div id="my-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
         <div class='header js-header'>
             <!--<a href='#'>Calendar</a>-->
             <h1 class='calendar-title'>Calendar</h1>
             <!--<img src='calremind.png' alt='CalRemind Logo'/>-->
         </div>
-        <nav class='navbar navbar-default'>
+        <nav class='navbar navbar-inverse'>
             <div class='container-fluid'>
                 <ul class='nav navbar-nav'>
-                    <li class='navi home'><a href='#'>Home</a></li>
+                    <!--<li class='navi home'><a href='#'>Home</a></li>
                     <li class='navi about'><a href='#'>About</a></li>
+                    <li class='navi contact'><a href='#'>Contact Us</a></li>-->
                     <li class='navi help'><a href='#'>Help</a></li>
-                    <li class='navi contact'><a href='#'>Contact Us</a></li>
-                    <li class='navi fb'><i class='na fa fa-facebook'></i><a href='#'></a></li>
+                    <!--<li class='navi fb'><i class='na fa fa-facebook'></i><a href='#'></a></li>
                     <li class='navi tw'><i class='na fa fa-twitter'></i><a href='#'></a></li>
                     <li class='navi insta'><i class='na fa fa-instagram'></i><a href='#'></a></li>
                     <li class='navi snpcht'><i class='na fa fa-snapchat'></i><a href='#'></a></li>
-                    <li class='navi email'><i class='na fa fa-envelope'></i><a href='#'></a></li>
+                    <li class='navi email'><i class='na fa fa-envelope'></i><a href='#'></a></li>-->
                 </ul>
             </div>
         </nav>
@@ -57,12 +79,44 @@
              </div>
         </div>
         <div class='modal-overlay'>
-        <div class='startpic'>
-            <!--<ol class='pics'>
+               <div id='myCarousel' class='carousel slide' data-ride='carousel'>
+            <div>
+                <ol class='carousel-indicators'>
+                    <li data-target='#myCarousel' data-slide-to='0'></li>
+                    <li data-target='#myCarousel' data-slide-to='1'></li>
+                </ol>    
+            </div>
+            <div class='carousel-inner'>
+                <div class='item active'>
+                    <ol class='slide slide1'>
+                        <!--<li class='review1'>Too good! -V.A.</li>
+                        <li class='review2'>So wow! -A.D.</li>
+                        <li class='review3'>Much nice! -S.M.</li>-->
+                    </ol>
+                </div>
+                <div class='item'>
+                    <ol class='slide slide2'>
+                        <!--<li class='review4'> :) </li>
+                        <li class='review5'> :D </li>
+                        <li class='review6'>;P </li>-->
+                    </ol>
+                </div>
+            </div>
+             <a class='left carousel-button' href='#myCarousel' data-slide='prev'>
+            <span class='glyphicon glyphicon-chevron-left'></span>
+            </a>
+        <a class='right carousel-button' href='#myCarousel' data-slide='next'>
+            <span class='glyphicon glyphicon-chevron-right'></span>
+            </a>
+        </div>
+       
+        
+        <!--<div class='startpic'>
+            <ol class='pics'>
                  <li class='pic-item cal'><img src='http://www.dailydooh.com/wp-content/uploads/img/calendar-icon.png' alt='Calendar'/></li>
                  <li class='pic-item checklist'><img src='https://www.janiking.com/wp-content/uploads/2013/08/bank-cleaning-checklist-1.jpg' alt='Checklist'/></li>
-            </ol>-->
-        </div>
+            </ol>
+        </div>-->
         <div class='content'>
             <ol class='month-list'>
                 <li class='month-item january' name='01'><a href='#'>January</a></li>
@@ -79,7 +133,7 @@
                 <li class='month-item december' name='12'><a href='#'>December</a></li>
             </ol>
         </div>
-        <div class='reminder-pane col col-xs-12'>Reminders:
+        <div class='reminder-pane col col-xs-12 col-md-6'>Reminders:
             <ol class='note-record'>
             </ol>
         </div>
@@ -95,37 +149,13 @@
         </div>-->
         <!--<div class='reminder-pane'>Reminders
         </div>-->
-        <div id='myCarousel' class='carousel slide' data-ride='carousel'>
-            <div>
-                <ol class='carousel-indicators'>
-                    <li data-target='#myCarousel' data-slide-to='0'></li>
-                    <li data-target='#myCarousel' data-slide-to='1'></li>
-                </ol>    
+         <div class='dec'>
+            <div class='triangle'>
             </div>
-            <div class='carousel-inner'>
-                <div class='item active'>
-                    <ol class='slide slide1'>
-                        <li class='review1'>Too good! -V.A.</li>
-                        <li class='review2'>So wow! -A.D.</li>
-                        <li class='review3'>Much nice! -S.M.</li>
-                    </ol>
-                </div>
-                <div class='item'>
-                    <ol class='slide slide2'>
-                        <li class='review4'> :) </li>
-                        <li class='review5'> :D </li>
-                        <li class='review6'>;P </li>
-                    </ol>
-                </div>
+            <div class='bar'>
             </div>
         </div>
-        <a class='left carousel-button' href='myCarousel' data-slide='prev'>
-            <span class='glyphicon glyphicon-chevron-left'></span>
-            </a>
-        <a class='right carousel-button' href='myCarousel' data-slide='prev'>
-            <span class='glyphicon glyphicon-chevron-right'></span>
-            </a>
-        </div>
+ </div>
         <!--<div class='table'>
             <div class='cell'>
                 <ol class='dots'>
@@ -156,25 +186,19 @@
                 </ol>
             </div>
         </div>-->
-          <div class='dec'>
-            <div class='triangle'>
-            </div>
-            <div class='bar'>
-            </div>
-        </div>
         <div class='footer'>
                 <ol class='foot1'>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Contact Us</a></li>
+                    <!--<li><a href='#'>About</a></li>
+                    <li><a href='#'>Contact Us</a></li>-->
                     <li><a href='#'>Help</a></li>
-                    <li><a href='#'>Share</a>
-                    <ol class='foot2'>
+                    <li><a href='#'>Log-In</a>
+                    <!--<ol class='foot2'>
                         <li><i class='fa fa-facebook'></i><a href='#'>  Facebook</a></li>
                         <li><i class='fa fa-twitter'></i><a href='#'>  Twitter</a></li>
                         <li><i class='fa fa-instagram'></i><a href='#'>  Instagram</a></li>
                         <li><i class='fa fa-snapchat'></i><a href='#'>  Snapchat</a></li>
                         <li><i class='fa fa-envelope'></i><a href='#'>  Email</a></li>
-                    </ol>
+                    </ol>-->
             </ol>
         </div>
     </main>

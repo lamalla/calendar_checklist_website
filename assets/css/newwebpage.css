@@ -9,7 +9,7 @@ h1,h2,h3,h4{
 body{
     margin: 0;
     padding: 0;
-    background-color: lightskyblue;
+    background-color: slategray;
         
 }
 
@@ -59,7 +59,18 @@ div .content, .note-form{
     display: inline;
 }
 
-.january{
+.month-item{
+    background-color: #FFB6C1;
+    border-color: white;
+    border-radius: 15%;
+}
+
+.month-item a{
+    color: lightslategray;
+}
+
+
+/*.january{
     background-image: url('https://static.bhphotovideo.com/explora/sites/default/files/Correct.jpg');
     background-size: contain;
    
@@ -121,16 +132,15 @@ div .content, .note-form{
 .november{
     background-image: url('http://dstvalleyforge.org/wp-content/uploads/2014/09/fall-leaves-falling-banner.jpg');
     background-size: cover;
-}
+}*/
 
 .calendar-title{
     font-size: 50px;
-    color: cornflowerblue;
+    color: white;
 }
 
 .reminder-pane{
     float: right;
-    width: 30%;
     display: inline-block;
     margin-right: 50px; 
 }
@@ -143,10 +153,10 @@ div .content, .note-form{
 .modal{
     visibility: hidden;
     opacity: 0;
-    z-index: 2;
+    z-index: 5;
     width: 60%;
     position: absolute;
-    top: 200px ;
+    top: 600px ;
     margin-left:auto;
     margin-right: auto;
     margin-top: auto;
@@ -163,7 +173,7 @@ div .content, .note-form{
 .retreat{
     opacity: 0.2;
     visibility: visible;
-    background-color: darkblue;
+    background-color: darkgray;
     width: 100%;
 }
 
@@ -177,8 +187,9 @@ div .content, .note-form{
 .reminder-pane{
     overflow-y: scroll;
     height: 100px;
-    width: 50%;
-    border: 1px solid black;
+    /*width: 50%;*/
+    border: 5px solid black;
+    border-radius:2%;
     position: relative;
     bottom: 130px;
     left: 130px;
@@ -186,6 +197,7 @@ div .content, .note-form{
     padding: 5px;
     margin-right: 190px;
     box-shadow: 1px 1px 1px #888888;
+    background-color: aliceblue;
 }
 
 .modal-win{
@@ -207,11 +219,12 @@ div .content, .note-form{
 }
 
 .month-item:hover{
-    opacity: 0.4; 
+    background-color: white;
+    opacity: 0.8; 
+    
    /* background:rgba(255,255,255,0.2);*/
     
 }
-
 
 
 .foot1{
@@ -222,7 +235,7 @@ div .content, .note-form{
     
      list-style-type: none;
     display: inline;
-    background-color: darkslateblue;
+    background-color: black;
     width: 100%;
    float: left;
     height: 200px; 
@@ -345,23 +358,24 @@ div .content, .note-form{
 
 .dec{
     height: 100px;
-    background-color:darkblue;
+    background-color:black;
     width:100%;
     visibility: visible;
     opacity: 1;
     margin-bottom: 20px;
+    float: right;
 }
 .bar{
     height:100px;
     width:20px;
-    background-color:darkslateblue;
+    background-color:cornflowerblue;
     float: right;
 }
 
 .triangle{
     height:0;
     width:0;
-    border-right: 100px solid darkslateblue;
+    border-right: 100px solid cornflowerblue;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
     float:right;
@@ -372,24 +386,29 @@ div .content, .note-form{
     background-color: cornflowerblue;
     box-shadow: inset 0 0 0 10px cornflowerblue;
     top: 60px;
+    height: 400px;
+    
     
 }
 
-.carousel-indicators{
+.carousel-indicators a{
     /*display: inline-block; */
-    bottom: -5px;
+    /*bottom: -5px;*/
+    color:white;
     
 }
 
 .carousel-inner {
-    top: -50px;
+    top: 100px;
 }
 
-.na .fa{
+/*.na .fa{
     float:right;
 }
 
-.container-fluid{
+*/
+
+/*.container-fluid{
     background-color: darkslateblue;
     color: white;
     height: 50px;
@@ -398,8 +417,9 @@ div .content, .note-form{
 .navbar-default .navbar-nav li a{
     color: white;
 }
+*/
 
-.navbar-default .navbar-nav li i, .navbar-default .navbar-nav li a {
+/*.navbar-default .navbar-nav li i, .navbar-default .navbar-nav li a {
     
     display: inline;
 }
@@ -415,7 +435,7 @@ div .content, .note-form{
     padding-left: 0px;
 }
 
-
+*/
 
 /*.pic-item{
     list-style-type: none;
@@ -425,7 +445,37 @@ div .content, .note-form{
     width: 50%;
     object-fit: fill;
 }*/
-.startpic{
+/*.startpic{
     background: url(http://www.dailydooh.com/wp-content/uploads/img/calendar-icon.png) left center no-repeat, url(https://www.shareicon.net/data/256x256/2015/11/27/678554_list_512x512.png) right center no-repeat;
     height: 500px;
+}*/
+
+.container-fluid{
+    background-color: #222;
+    border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav li i, .navbar-inverse .navbar-nav li a{
+    color:white;
+}
+
+#my-signin2{
+    height: 50px;
+    
+}
+
+.glyphicon-chevron-right{
+   float: right;
+    color: white;
+    top: 200px;
+    padding-right: 15px;
+
+}
+
+.glyphicon-chevron-left{
+    left: 0;
+    color: white;
+    top: 200px;
+    padding-left: 15px;
+ 
 }

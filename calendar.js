@@ -62,6 +62,13 @@ $(document).ready(function () {
         
     //});
     
+    $('.modal-overlay.retreat').on('click', function(event){
+        event.preventDefault();
+        
+        $('.modal-overlay.retreat').removeClass('retreat');
+        $('.modal.activate').removeClass('activate');
+     
+    })
     
    
 });
