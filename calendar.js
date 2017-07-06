@@ -4,7 +4,7 @@ $(document).ready(function () {
         //$('html').scrollTop(0).reload();
         
     //});
-    $('.month-item').on('click', function (event) {
+    $('.rem').on('click', function (event) {
         event.preventDefault();
        //var pos= $('.month-item').backgroundPositionX;
        //var num= $(this).name();
@@ -25,6 +25,11 @@ $(document).ready(function () {
         event.preventDefault();
         var lit = $('#date2').val() + ' ' + $('#note2').val();
         $('.note-record').append('<li>').append('<input id="checkBox" type="checkbox" display="inline">').append("  ").append(lit).append('</li>');
+        for (String key: table){
+            if ($('#date2').getMonth()== key){
+                table.push(lit);
+            }
+        }
         $('.modal').removeClass('activate');
         $('.modal-overlay').removeClass('retreat');
            
@@ -69,6 +74,10 @@ $(document).ready(function () {
         $('.modal.activate').removeClass('activate');
      
     })
+    
+    var table= new Hash('01', [], '02',[], '03',[], '04',[], '05',[], '06',[], '07',[], '08',[],'09',[], '10',[], '11',[],'12',[] );
+    
+    $('[data-toggle="tooltip"]').tooltip();
     
    
 });

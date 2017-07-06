@@ -498,3 +498,7 @@ div .content, .note-form{
     
  
 }
+
+.tt{
+    overflow: auto;
+}
