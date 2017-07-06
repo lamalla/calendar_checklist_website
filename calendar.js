@@ -24,7 +24,7 @@ $(document).ready(function () {
     $('.form-submit2').on('click', function (event) {
         event.preventDefault();
         var lit = $('#date2').val() + ' ' + $('#note2').val();
-        $('.note-record').append('<li>').append(lit).append('</li>');
+        $('.note-record').append('<li>').append('<input id="checkBox" type="checkbox" display="inline">').append("  ").append(lit).append('</li>');
         $('.modal').removeClass('activate');
         $('.modal-overlay').removeClass('retreat');
            

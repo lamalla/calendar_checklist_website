@@ -156,11 +156,11 @@ div .content, .note-form{
     z-index: 5;
     width: 60%;
     position: absolute;
-    top: 600px ;
+    /*top: 600px ;
     margin-left:auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto;*/
 }
 
 .modal-overlay{
@@ -477,5 +477,24 @@ div .content, .note-form{
     color: white;
     top: 200px;
     padding-left: 15px;
+    
+ 
+}
+
+.glyphicon-chevron-right: hover{
+   float: right;
+    color: lightgray;
+    top: 200px;
+    padding-right: 15px;
+    
+
+}
+
+.glyphicon-chevron-left:hover{
+    left: 0;
+    color: lightgray;
+    top: 200px;
+    padding-left: 15px;
+    
  
 }
