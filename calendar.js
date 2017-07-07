@@ -8,7 +8,7 @@ $(document).ready(function () {
         
     //});
     
-    var table = {'01': [], '02': [], '03': [], '04': [], '05': [], '06': [], '07': [], '08': [], '09': [], '10': [], '11': [], '12': []}, key, s;
+    var table = {'01': [], '02': [], '03': [], '04': [], '05': [], '06': [], '07': [], '08': [], '09': [], '10': [], '11': [], '12': []}, key, s, jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec, value;
     
     $('.rem').on('click', function (event) {
         event.preventDefault();
@@ -34,6 +34,43 @@ $(document).ready(function () {
         s = $('#date2').val().split('-');
         key = s[1];
         table[key].push(lit);
+        value = table[key];
+        if (key === '01') {
+            $('.jan-tt').prop('title', value);
+        }
+        if (key === '02') {
+            $('.feb-tt').prop('title', value);
+        }
+        if (key === '03') {
+            $('.mar-tt').prop('title', value);
+        }
+        if (key === '04') {
+            $('.apr-tt').prop('title', value);
+        }
+        if (key === '05') {
+            $('.may-tt').prop('title', value);
+        }
+        if (key === '06') {
+            $('.jun-tt').prop('title', value);
+        }
+        if (key === '07') {
+            $('.jul-tt').prop('title', value);
+        }
+        if (key === '08') {
+            $('.aug-tt').prop('title', value);
+        }
+        if (key === '09') {
+            $('.sep-tt').prop('title', value);
+        }
+        if (key === '10') {
+            $('.oct-tt').prop('title', value);
+        }
+        if (key === '11') {
+            $('.nov-tt').prop('title', value);
+        }
+        if (key === '12') {
+            $('.dec-tt').prop('title', value);
+        }
         $('.modal').removeClass('activate');
         $('.modal-overlay').removeClass('retreat');
     });
