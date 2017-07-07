@@ -155,12 +155,17 @@ div .content, .note-form{
     opacity: 0;
     z-index: 5;
     width: 60%;
+    /*height: 0;*/
     position: absolute;
-    /*top: 600px ;
+    display: flex; 
+    top: 600px ;
     margin-left:auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: auto;*/
+    margin-bottom: auto;
+    /*height: auto;*/
+   /* margin: 0 auto;*/
+    /*vertical-align: middle;*/
 }
 
 .modal-overlay{
@@ -501,4 +506,12 @@ div .content, .note-form{
 
 .tt{
     overflow: auto;
+}
+
+.btn-primary.rem{
+    padding: 40px; 
+    margin: 20px;
+    height: auto;
+    width: 300px;
+    z-index: 3; 
 }
