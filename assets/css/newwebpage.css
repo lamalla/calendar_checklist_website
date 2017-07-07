@@ -154,15 +154,15 @@ div .content, .note-form{
     visibility: hidden;
     opacity: 0;
     z-index: 5;
-    width: 60%;
+    width: 55%;
     /*height: 0;*/
     position: absolute;
     display: flex; 
-    top: 600px ;
-    margin-left:auto;
+    /*top: 600px ;*/
+   /*margin-left:auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto;*/
     /*height: auto;*/
    /* margin: 0 auto;*/
     /*vertical-align: middle;*/
@@ -187,6 +187,10 @@ div .content, .note-form{
     visibility: visible;
     display: inline;
    z-index: 20;
+    position: fixed;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 .reminder-pane{
