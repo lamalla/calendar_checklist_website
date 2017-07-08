@@ -36,40 +36,76 @@ $(document).ready(function () {
         table[key].push(lit);
         value = table[key];
         if (key === '01') {
-            $('.jan-tt').prop('title', value);
+            $('.jan-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '02') {
-            $('.feb-tt').prop('title', value);
+            $('.feb-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '03') {
-            $('.mar-tt').prop('title', value);
+            $('.mar-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '04') {
-            $('.apr-tt').prop('title', value);
+            $('.apr-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '05') {
-            $('.may-tt').prop('title', value);
+            $('.may-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '06') {
-            $('.jun-tt').prop('title', value);
+            $('.jun-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '07') {
-            $('.jul-tt').prop('title', value);
+            $('.jul-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '08') {
-            $('.aug-tt').prop('title', value);
+            $('.aug-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '09') {
-            $('.sep-tt').prop('title', value);
+            $('.sep-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '10') {
-            $('.oct-tt').prop('title', value);
+            $('.oct-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '11') {
-            $('.nov-tt').prop('title', value);
+            $('.nov-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         if (key === '12') {
-            $('.dec-tt').prop('title', value);
+            $('.dec-tt').tooltip('hide')
+          .attr('data-original-title', value)
+          .tooltip('fixTitle')
+          .tooltip('show');
         }
         $('.modal').removeClass('activate');
         $('.modal-overlay').removeClass('retreat');
