@@ -18,14 +18,30 @@
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
-    <meta name="237479426553-2pgoq0b1h7htjmne80670ca6id8rv19u.apps.googleusercontent.com" content="237479426553-2pgoq0b1h7htjmne80670ca6id8rv19u.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="237479426553-2pgoq0b1h7htjmne80670ca6id8rv19u.apps.googleusercontent.com">
 </head>
 <body>
     <main>
-        <div id="my-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
+        <div class='header js-header'>
+            <!--<a href='#'>Calendar</a>-->
+            <h1 class='calendar-title'>Calendar</h1>
+            <!--<img src='calremind.png' alt='CalRemind Logo'/>-->
+        </div>
+        <nav class='navbar navbar-inverse'>
+            <div class='container-fluid'>
+                <ul class='nav navbar-nav'>
+                    <!--<li class='navi home'><a href='#'>Home</a></li>
+                    <li class='navi about'><a href='#'>About</a></li>
+                    <li class='navi contact'><a href='#'>Contact Us</a></li>-->
+                    <li class='navi add'><a href='#' class='rem'>Add Reminder</a></li>
+                    <li class='navi help'><a href='#'>Help</a></li>
+                    <li class= 'navi sign-upButton'><div id="my-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        $('.navi').append('<li>').append('Welcome, ').append(googleUser.getBasicProfile().getName()).append('!').append('</li>');
+        $('.navi').append('<li>').append('<a href="https://accounts.google.com/logout">').append('Sign Out').append('</a>').append('</li>');
+        
     }
     function onFailure(error) {
       console.log(error);
@@ -43,20 +59,8 @@
     }
   </script>
 
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-        <div class='header js-header'>
-            <!--<a href='#'>Calendar</a>-->
-            <h1 class='calendar-title'>Calendar</h1>
-            <!--<img src='calremind.png' alt='CalRemind Logo'/>-->
-        </div>
-        <nav class='navbar navbar-inverse'>
-            <div class='container-fluid'>
-                <ul class='nav navbar-nav'>
-                    <!--<li class='navi home'><a href='#'>Home</a></li>
-                    <li class='navi about'><a href='#'>About</a></li>
-                    <li class='navi contact'><a href='#'>Contact Us</a></li>-->
-                    <li class='navi add'><a href='#' class='rem'>Add Reminder</a></li>
-                    <li class='navi help'><a href='#'>Help</a></li>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script></li>
+                    
                     <!--<li class='navi fb'><i class='na fa fa-facebook'></i><a href='#'></a></li>
                     <li class='navi tw'><i class='na fa fa-twitter'></i><a href='#'></a></li>
                     <li class='navi insta'><i class='na fa fa-instagram'></i><a href='#'></a></li>

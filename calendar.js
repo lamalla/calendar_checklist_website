@@ -141,16 +141,16 @@ $(document).ready(function () {
         
     //});
     
-    $('.modal-overlay').on('click', function (event) {
-        event.preventDefault();
-        
-        $('.modal-overlay').removeClass('retreat');
-        $('.modal').removeClass('activate');
+    //$('.modal-overlay').on('click', function (event) {
+       // event.preventDefault();
+       // event.stopPropagation();
+       // $('.modal-overlay').removeClass('retreat');
+       // $('.modal').removeClass('activate');
      
-    });
+    //});
     
     
-    $('[data-toggle="tooltip"]').tooltip();
+    
     
    
 });
