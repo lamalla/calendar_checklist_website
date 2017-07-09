@@ -519,4 +519,26 @@ div .content, .note-form{
     width: 300px;
     z-index: 3; 
 }
+.navbar-nav{
+    width: 100%;
+}
+
+li#sign-in.navi.sign-upButton{
+    float: right; 
+}
+
+.welcome{
+    height: 20px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.welcome a{
+    float: right;
+    padding-right: 15px; 
+    font-size: 16px;
+    color: blue;
+}
+
+
 

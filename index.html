@@ -27,6 +27,8 @@
             <h1 class='calendar-title'>Calendar</h1>
             <!--<img src='calremind.png' alt='CalRemind Logo'/>-->
         </div>
+        <div class='welcome'>
+        </div>
         <nav class='navbar navbar-inverse'>
             <div class='container-fluid'>
                 <ul class='nav navbar-nav'>
@@ -35,12 +37,15 @@
                     <li class='navi contact'><a href='#'>Contact Us</a></li>-->
                     <li class='navi add'><a href='#' class='rem'>Add Reminder</a></li>
                     <li class='navi help'><a href='#'>Help</a></li>
-                    <li class= 'navi sign-upButton'><div id="my-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
+                    <li class= 'navi sign-upButton' id='sign-in'><div id="my-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        $('.navi').append('<li>').append('Welcome, ').append(googleUser.getBasicProfile().getName()).append('!').append('</li>');
-        $('.navi').append('<li>').append('<a href="https://accounts.google.com/logout">').append('Sign Out').append('</a>').append('</li>');
+        $('.welcome').append('Welcome, ').append(googleUser.getBasicProfile().getName()).append('!');
+        $('.welcome').append('<a href="https://accounts.google.com/logout">Sign Out </a>');
+        
+        /*$('.nav').append('<li class="navi sign-out">').append('<a href="https://accounts.google.com/logout">').append('Sign Out').append('</a>').append('</li>');*/
+        
         
     }
     function onFailure(error) {
@@ -57,6 +62,13 @@
         'onfailure': onFailure
       });
     }
+      
+   /* function onLogin(googleUser){
+        document.getElementById("sign-in").style.display = "none";
+        $('.navi').append('<li>').append('Welcome, ').append(googleUser.getBasicProfile().getName()).append('!').append('</li>');
+    }*/
+      
+    
   </script>
 
   <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script></li>
