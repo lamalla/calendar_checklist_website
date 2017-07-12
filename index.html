@@ -42,10 +42,13 @@
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        var logged= false;
+        if (!logged){
         $('.welcome').append('Welcome, ').append(googleUser.getBasicProfile().getName()).append('!');
         $('.welcome').append('<a href="https://accounts.google.com/logout" class="sign-out1">Sign Out</a>');
         $('.sign-out2').addClass('appear');
-        
+        logged=true;
+        }
         /*$('.nav').append('<li class="navi sign-out">').append('<a href="https://accounts.google.com/logout">').append('Sign Out').append('</a>').append('</li>');*/
         
         

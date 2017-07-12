@@ -1,3 +1,33 @@
+function setReminder(date, remind) {
+var event = {
+  'summary': remind,
+  'description': remind,
+  'start': {
+    'dateTime': date+'T9:00:00-07:00',
+    'timeZone': 'America/Los_Angeles'
+  },
+  'end': {
+    'dateTime': date+'T17:00:00-07:00',
+    'timeZone': 'America/Los_Angeles'
+  },
+  'reminders': {
+    'useDefault': false,
+    'overrides': [
+      {'method': 'email', 'minutes': 24 * 60},
+      {'method': 'popup', 'minutes': 10}
+    ]
+  }
+};
+
+var request = gapi.client.calendar.events.insert({
+  'calendarId': 'primary',
+  'resource': event
+});
+
+request.execute(function(event) {
+  appendPre('Event created: ' + event.htmlLink);
+});
+}
 /*jslint browser: true, devel: true */
 /*global $, jQuery*/
 $(document).ready(function () {
@@ -107,6 +137,7 @@ $(document).ready(function () {
                 .tooltip('fixTitle')
                 .tooltip('show');
         }
+        setReminder($('#date2').val(), $('#note2').val());
         $('.modal').removeClass('activate');
         $('.modal-overlay').removeClass('retreat');
     });
