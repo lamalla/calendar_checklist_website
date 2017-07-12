@@ -37,75 +37,75 @@ $(document).ready(function () {
         value = table[key];
         if (key === '01') {
             $('.jan-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '02') {
             $('.feb-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '03') {
             $('.mar-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '04') {
             $('.apr-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '05') {
             $('.may-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '06') {
             $('.jun-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '07') {
             $('.jul-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '08') {
             $('.aug-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '09') {
             $('.sep-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '10') {
             $('.oct-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '11') {
             $('.nov-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         if (key === '12') {
             $('.dec-tt').tooltip('hide')
-          .attr('data-original-title', value)
-          .tooltip('fixTitle')
-          .tooltip('show');
+                .attr('data-original-title', value)
+                .tooltip('fixTitle')
+                .tooltip('show');
         }
         $('.modal').removeClass('activate');
         $('.modal-overlay').removeClass('retreat');
@@ -149,9 +149,28 @@ $(document).ready(function () {
      
     //});
     
+    $('.sign-out1').on('click', function (event) {
+        event.preventDefault();
+        alert('Successfully Logged Out!');
+        window.history.go(-1);
+        
+    });
+    
+    $('.sign-out2').on('click', function (event) {
+        event.preventDefault();
+        alert('Successfully Logged Out!');
+        window.history.go(-1);
+        
+    });
     
     
     
    
 });
+
+
+
+     
+      
+
 

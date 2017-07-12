@@ -540,5 +540,26 @@ li#sign-in.navi.sign-upButton{
     color: blue;
 }
 
+.sign-out2{
+    visibility: hidden;
+    opacity: 0; 
+}
 
+.appear{
+    visibility: visible;
+    opacity: 1;
+}
+
+.explanation{
+    padding: 25px;
+    
+    color: white;
+}
+
+.help-title{
+    padding-left: 32px; 
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
 

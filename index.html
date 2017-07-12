@@ -24,7 +24,7 @@
     <main>
         <div class='header js-header'>
             <!--<a href='#'>Calendar</a>-->
-            <h1 class='calendar-title'>Calendar</h1>
+            <h1 class='calendar-title'>Calendar Reminders</h1>
             <!--<img src='calremind.png' alt='CalRemind Logo'/>-->
         </div>
         <div class='welcome'>
@@ -35,14 +35,16 @@
                     <!--<li class='navi home'><a href='#'>Home</a></li>
                     <li class='navi about'><a href='#'>About</a></li>
                     <li class='navi contact'><a href='#'>Contact Us</a></li>-->
-                    <li class='navi add'><a href='#' class='rem'>Add Reminder</a></li>
-                    <li class='navi help'><a href='#'>Help</a></li>
+                    <li class='navi home'><a href='index.html' class='home'>Home</a></li>
+                    <li class='navi add'><a href='index.html' class='rem'>Add Reminder</a></li>
+                    <li class='navi help'><a href='help.html'>Help</a></li>
                     <li class= 'navi sign-upButton' id='sign-in'><div id="my-signin2" data-width="300" data-height="200" data-longtitle="true"></div>
   <script>
     function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
         $('.welcome').append('Welcome, ').append(googleUser.getBasicProfile().getName()).append('!');
-        $('.welcome').append('<a href="https://accounts.google.com/logout">Sign Out </a>');
+        $('.welcome').append('<a href="https://accounts.google.com/logout" class="sign-out1">Sign Out</a>');
+        $('.sign-out2').addClass('appear');
         
         /*$('.nav').append('<li class="navi sign-out">').append('<a href="https://accounts.google.com/logout">').append('Sign Out').append('</a>').append('</li>');*/
         
@@ -154,7 +156,7 @@
             <ol class='note-record'>
             </ol>
         </div>
-            <button type='button' class='btn btn-primary rem'>Add a Reminder</button>
+            <button type='button' class='btn btn-primary rem'>Add Reminder</button>
         <!--<div >
             <form class='form note-form'>
                 <label class='date-label' for='date'>Date :</label>
@@ -209,7 +211,7 @@
                     <!--<li><a href='#'>About</a></li>
                     <li><a href='#'>Contact Us</a></li>-->
                     <li><a href='#'>Help</a></li>
-                    <li><a href='#'>Log-In</a>
+                    <li ><a href='https://accounts.google.com/logout' class='sign-out2'>Sign-Out</a></li>
                     <!--<ol class='foot2'>
                         <li><i class='fa fa-facebook'></i><a href='#'>  Facebook</a></li>
                         <li><i class='fa fa-twitter'></i><a href='#'>  Twitter</a></li>
@@ -222,6 +224,7 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
     <script src='calendar.js'></script>
 </body>
 </html>
