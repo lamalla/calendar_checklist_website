@@ -1,5 +1,13 @@
-  // Client ID and API key from the Developer Console
+  
+
+// .SERIALIZE AND POP UP CONFIRMATION WINDOW
+
+
+
+
+// Client ID and API key from the Developer Console
       var CLIENT_ID = '237479426553-2pgoq0b1h7htjmne80670ca6id8rv19u.apps.googleusercontent.com';
+
       // Array of API discovery doc URLs for APIs used by the quickstart
       var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 
@@ -272,9 +280,9 @@ $(document).ready(function () {
         
     });
     
-    if (document.getElementById('checkBox').checked) {
-        alert('Hello!');
-    }
+   // if (document.getElementById('checkBox').checked) {
+       // alert('Hello!');
+   // }
     
     //$('.circle1').on('click', function (event) {
        // event.preventDefault();

@@ -87,14 +87,14 @@
             </div>
         </nav>
          <div class='modal'>
-             <div class='modal-win'>
+             <div class='modal-win col-xs-12'>
                 <form class='form note-form2'>
                     <label class='date-label2' for='date2'>Date :</label>
                     <input class='date-input2' type='date' id='date2' name='date2'/>
                     <label class='note-label2' for='note2'>Note:</label>
                     <input class='note-input2' type='text' id='note2' name='note2'/>
                     <input class='submit form-submit2' type='submit'/>
-                    <input id='checkBox' type='checkBox'/>Send Email Reminder
+                    <!--<input id='checkBox' type='checkBox'/>Send Email Reminder-->
                     <!--<button class='form-cancel2'>Cancel</button> -->
                     <span class='glyphicon glyphicon-remove'></span>
                 </form>
@@ -111,6 +111,7 @@
             <div class='carousel-inner'>
                 <div class='item active'>
                     <ol class='slide slide1'>
+                        <img class='calPic' src='/assets/img/cal.jpg' alt='Calendar Picture'/>
                         <!--<li class='review1'>Too good! -V.A.</li>
                         <li class='review2'>So wow! -A.D.</li>
                         <li class='review3'>Much nice! -S.M.</li>-->
@@ -118,6 +119,7 @@
                 </div>
                 <div class='item'>
                     <ol class='slide slide2'>
+                        <li> Add reminders to Google Calendar by pressing 'Add Reminder'!</li>
                         <!--<li class='review4'> :) </li>
                         <li class='review5'> :D </li>
                         <li class='review6'>;P </li>-->
@@ -140,26 +142,38 @@
             </ol>
         </div>-->
         <div class='content'>
+            <div class='container'>
+            <div class='row'>
             <ol class='month-list'>
-                <li class='month-item january' name='01'><a href='#' class='tt jan-tt' data-toggle='tooltip' title=''>January</a></li>
-                <li class='month-item february' name='02'><a href='#' class='tt feb-tt' data-toggle='tooltip' title=''>February</a></li>
-                <li class='month-item march' name='03'><a href='#' class='tt mar-tt' data-toggle='tooltip' title=''>March</a></li>
-                <li class='month-item april' name='04'><a href='#' class='tt apr-tt' data-toggle='tooltip' title=''>April</a></li>
-                <li class='month-item may' name='05'><a href='#' class='tt may-tt' data-toggle='tooltip' title=''>May</a></li>
-                <li class='month-item june' name='06'><a href='#' class='tt jun-tt' data-toggle='tooltip' title=''>June</a></li>
-                <li class='month-item july' name='07'><a href='#' class='tt jul-tt' data-toggle='tooltip' title=''>July</a></li>
-                <li class='month-item august' name='08'><a href='#' class='tt aug-tt' data-toggle='tooltip' title=''>August</a></li>
-                <li class='month-item september' name='09'><a href='#' class='tt sep-tt' data-toggle='tooltip' title=''>September</a></li>
-                <li class='month-item october' name='10'><a href='#' class='tt oct-tt' data-toggle='tooltip' title=''>October</a></li>
-                <li class='month-item november' name='11'><a href='#' class='tt nov-tt' data-toggle='tooltip' title=''>November</a></li>
-                <li class='month-item december' name='12'><a href='#' class='tt dec-tt' data-toggle='tooltip' title=''>December</a></li>
+                <li class='month-item january col-xs-6' name='01'><a href='#' class='tt jan-tt' data-toggle='tooltip' title=''>January</a></li>
+                <li class='month-item february col-xs-6' name='02'><a href='#' class='tt feb-tt' data-toggle='tooltip' title=''>February</a></li>
+                <li class='month-item march col-xs-6' name='03'><a href='#' class='tt mar-tt' data-toggle='tooltip' title=''>March</a></li>
+                <li class='month-item april col-xs-6' name='04'><a href='#' class='tt apr-tt' data-toggle='tooltip' title=''>April</a></li>
+                <li class='month-item may col-xs-6' name='05'><a href='#' class='tt may-tt' data-toggle='tooltip' title=''>May</a></li>
+                <li class='month-item june col-xs-6' name='06'><a href='#' class='tt jun-tt' data-toggle='tooltip' title=''>June</a></li>
+                <li class='month-item july col-xs-6' name='07'><a href='#' class='tt jul-tt' data-toggle='tooltip' title=''>July</a></li>
+                <li class='month-item august col-xs-6' name='08'><a href='#' class='tt aug-tt' data-toggle='tooltip' title=''>August</a></li>
+                <li class='month-item september col-xs-6' name='09'><a href='#' class='tt sep-tt' data-toggle='tooltip' title=''>September</a></li>
+                <li class='month-item october col-xs-6' name='10'><a href='#' class='tt oct-tt' data-toggle='tooltip' title=''>October</a></li>
+                <li class='month-item november col-xs-6' name='11'><a href='#' class='tt nov-tt' data-toggle='tooltip' title=''>November</a></li>
+                <li class='month-item december col-xs-6' name='12'><a href='#' class='tt dec-tt' data-toggle='tooltip' title=''>December</a></li>
             </ol>
+                </div>
+            </div>
         </div>
-        <div class='reminder-pane col col-xs-12 col-md-6'>Reminders:
-            <ol class='note-record'>
-            </ol>
+        <div class='container'>
+            <div class='row'>
+                <div class='reminder-pane col col-xs-12 col-md-6'>Reminders:
+                    <ol class='note-record'>
+                    </ol>
+                </div>
+            </div>
         </div>
-            <button type='button' class='btn btn-primary rem'>Add Reminder</button>
+        <div class='container'>
+            <div class='row'>
+            <button type='button' class='btn btn-primary rem col col-xs-12'>Add Reminder</button>
+            </div>
+            </div>
         <!--<div >
             <form class='form note-form'>
                 <label class='date-label' for='date'>Date :</label>
@@ -213,7 +227,7 @@
                 <ol class='foot1'>
                     <!--<li><a href='#'>About</a></li>
                     <li><a href='#'>Contact Us</a></li>-->
-                    <li><a href='#'>Help</a></li>
+                    <li><a href='help.html'>Help</a></li>
                     <li ><a href='https://accounts.google.com/logout' class='sign-out2'>Sign-Out</a></li>
                     <!--<ol class='foot2'>
                         <li><i class='fa fa-facebook'></i><a href='#'>  Facebook</a></li>

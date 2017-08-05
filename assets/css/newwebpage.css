@@ -408,7 +408,7 @@ div .content, .note-form{
 }
 
 .carousel-inner {
-    top: 100px;
+    top: 10px;
 }
 
 /*.na .fa{
@@ -561,5 +561,12 @@ li#sign-in.navi.sign-upButton{
     text-align: left;
     color: white;
     font-size: 20px;
+}
+
+.calPic{
+    max-width: 40%;
+    max-height: 40%;
+    transform: rotate(90deg);
+   /* top: 90px;*/
 }
 
