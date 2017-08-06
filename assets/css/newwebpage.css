@@ -31,7 +31,7 @@ body{
 .month-item{
     display: inline-block;
     border: 2px solid aqua;
-    font-size: 30px;
+    font-size: 2.5vw;
     list-style-type: none;
     margin: 8px;
     padding: 40px;
@@ -67,6 +67,7 @@ div .content, .note-form{
 
 .month-item a{
     color: lightslategray;
+    font-size: 4vw; 
 }
 
 
