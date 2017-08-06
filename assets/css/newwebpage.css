@@ -218,9 +218,9 @@ div .content, .note-form{
 
 .glyphicon-remove{
     float: right;   
-    position: absolute;
-    left: 660px;
-    top: 10px;
+    position: relative;
+    left: 20px;
+    top: -20px;
 }
 
 #checkBox{
@@ -478,6 +478,8 @@ div .content, .note-form{
     color: white;
     top: 200px;
     padding-right: 15px;
+    position: absolute;
+    left: 98%; 
 
 }
 
@@ -486,7 +488,7 @@ div .content, .note-form{
     color: white;
     top: 200px;
     padding-left: 15px;
-    
+    position: absolute;
  
 }
 
@@ -495,6 +497,7 @@ div .content, .note-form{
     color: lightgray;
     top: 200px;
     padding-right: 15px;
+    
     
 
 }
@@ -563,10 +566,19 @@ li#sign-in.navi.sign-upButton{
     font-size: 20px;
 }
 
-.calPic{
-    max-width: 40%;
+
+
+.calPic2{
+    max-width: 38%;
     max-height: 40%;
     transform: rotate(90deg);
    /* top: 90px;*/
 }
 
+.containerRemind{
+    height: 0px;
+}
+
+.remindText{
+    padding-top: 150px; 
+}
