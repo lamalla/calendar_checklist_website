@@ -29,14 +29,16 @@ body{
     
 }
 .month-item{
-    display: inline-block;
+    display: flex;
     border: 2px solid aqua;
-    font-size: 2.5vw;
+    /*font-size: 2.5vw;*/
     list-style-type: none;
     margin: 8px;
-    padding: 40px;
+    /*padding: 40px;*/
     width: 18%;  
+    height: 10vw;
     text-align: center;
+    align-items: center;
     
 }
 
@@ -67,7 +69,7 @@ div .content, .note-form{
 
 .month-item a{
     color: lightslategray;
-    font-size: 4vw; 
+    font-size: 2vw; 
 }
 
 
@@ -200,19 +202,22 @@ div .content, .note-form{
     /*width: 50%;*/
     border: 5px solid black;
     border-radius:2%;
-    position: relative;
+   /* position: relative;
     bottom: 130px;
     left: 130px;
-    right: 20px;
+    right: 20px;*/
     padding: 5px;
-    margin-right: 190px;
+   /* margin-right: 190px;*/
     box-shadow: 1px 1px 1px #888888;
     background-color: aliceblue;
+    float: right;
+    display: block;
+    margin-right: 50px; 
 }
 
 .modal-win{
     background-color: aquamarine;
-    padding: 30px;
+    padding: 3em;
     font-size: 12px;
     box-shadow: 5px 5px 5px #888888;
 }
