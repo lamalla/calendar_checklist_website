@@ -486,7 +486,7 @@ div .content, .note-form{
     top: 200px;
     padding-right: 15px;
     position: absolute;
-    left: 98%; 
+    left: 97%; 
 
 }
 
@@ -576,8 +576,8 @@ li#sign-in.navi.sign-upButton{
 
 
 .calPic2{
-    max-width: 38%;
-    max-height: 40%;
+   max-width: 420px;
+    max-height: 400px;
     transform: rotate(90deg);
    /* top: 90px;*/
 }
@@ -609,3 +609,14 @@ li#sign-in.navi.sign-upButton{
 .form-submit2{
     display: inline-block;
 }
+
+/*.calendarPicture{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/img/cal.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}*/
