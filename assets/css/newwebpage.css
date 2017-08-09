@@ -213,20 +213,21 @@ div .content, .note-form{
     float: right;
     display: block;
     margin-right: 50px; 
+    margin-top: 20px;
 }
 
 .modal-win{
     background-color: aquamarine;
-    padding: 3em;
+    padding: 1.5em;
     font-size: 12px;
     box-shadow: 5px 5px 5px #888888;
 }
 
 .glyphicon-remove{
     float: right;   
-    position: relative;
-    left: 20px;
-    top: -20px;
+    position: fixed;
+    right: 2em;
+    top: 1em;
 }
 
 #checkBox{
@@ -587,4 +588,24 @@ li#sign-in.navi.sign-upButton{
 
 .remindText{
     padding-top: 150px; 
+}
+
+.container.mon{
+    justify-content: center; 
+}
+
+.note-form2{
+    display: inline; 
+}
+
+.datePart{
+    display: inline-block;
+}
+
+.notePart{
+    display: inline-block;
+}
+
+.form-submit2{
+    display: inline-block;
 }
